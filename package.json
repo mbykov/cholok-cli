@@ -1,0 +1,55 @@
+{
+  "name": "cholok-cli",
+  "version": "0.1.11",
+  "description": "Command line interface for Cholok",
+  "main": "bin/index",
+  "bin": {
+    "cholok": "./bin/index.js"
+  },
+  "preferGlobal": true,
+  "author": "Michael Bykov <m.bykov@gmail.com>",
+  "copyright": "© 2018, Michael Bykov",
+  "license": "GPL-3.0",
+  "homepage": "http://diglossa.org/tibetan",
+  "scripts": {
+    "start": "npm run build && node dist/run",
+    "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production babel -s true src -d bin",
+    "clean": "rm -rf dist",
+    "run": "node dist/run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "directories": {
+    "src": "./src",
+    "bin": "./bin"
+  },
+  "files": [
+    "bin"
+  ],
+  "dependencies": {
+    "cholok": "^0.1.3",
+    "commander": "^2.19.0",
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbykov/cholok-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbykov/cholok-cli/issues"
+  }
+}
