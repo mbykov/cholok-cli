@@ -1,6 +1,6 @@
 {
   "name": "cholok-cli",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Command line interface for Cholok",
   "main": "bin/index",
   "bin": {
@@ -36,7 +36,7 @@
     "bin"
   ],
   "dependencies": {
-    "cholok": "^0.1.4",
+    "cholok": "^0.1.5",
     "commander": "^2.19.0",
     "lodash": "^4.17.10"
   },
