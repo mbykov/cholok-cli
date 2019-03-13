@@ -1,15 +1,15 @@
 {
   "name": "cholok-cli",
-  "version": "0.1.13",
+  "version": "0.2.0",
   "description": "Command line interface for Cholok",
   "main": "bin/index",
   "bin": {
     "cholok": "./bin/index.js"
   },
   "preferGlobal": true,
-  "author": "Michael Bykov <m.bykov@gmail.com>",
+  "author": "",
   "copyright": "© 2018, Michael Bykov",
-  "license": "GPL-3.0",
+  "license": "ISC",
   "homepage": "http://diglossa.org/tibetan",
   "scripts": {
     "start": "npm run build && node dist/run",
@@ -21,8 +21,6 @@
     "lint": "eslint src test"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "babel": {
     "presets": [
       "env"
@@ -36,9 +34,9 @@
     "bin"
   ],
   "dependencies": {
-    "cholok": "^0.1.5",
+    "cholok": "^0.2.0",
     "commander": "^2.19.0",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
